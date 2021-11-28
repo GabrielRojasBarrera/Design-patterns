@@ -4,9 +4,6 @@ using RefactoringGuru.DesignPatterns.Iterator.Conceptual;
 using RefactoringGuru.DesignPatterns.Mediator.Conceptual;
 using RefactoringGuru.DesignPatterns.Proxy.Conceptual;
 using RefactoringGuru.DesignPatterns.Strategy.Conceptual;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 
 namespace Design_patterns // Note: actual namespace depends on the project name.
 {
@@ -33,19 +30,40 @@ namespace Design_patterns // Note: actual namespace depends on the project name.
         public static void Main(string[] args)
         {
             int opcion;
-
+            
             do
             {
                 Console.Clear();
-                Console.WriteLine("Seleccione el patrón que desea ejecutar:");
-                Console.WriteLine("[0] Salir");
+                Console.WriteLine("Seleccione el patrón que desea ejecutar:\r\n");
+                Console.WriteLine("Patrones de Creación:");
+                Console.WriteLine("------------------------");
+                Console.WriteLine("[1] Abstract factory");
+                Console.WriteLine("[2] Factory method");
                 Console.WriteLine("[3] Singleton");
-                Console.WriteLine("[5] Builder");
+                Console.WriteLine("[5] Builder\n");
+                Console.WriteLine("Patrones de Estructura:");
+                Console.WriteLine("------------------------");
+                Console.WriteLine("[6] Adapter");
+                Console.WriteLine("[7] Bridge");
+                Console.WriteLine("[8] Composite");
+                Console.WriteLine("[9] Decorator");
+                Console.WriteLine("[10] Façade");               
                 Console.WriteLine("[11] Flyweight");
-                Console.WriteLine("[12] Proxy");
+                Console.WriteLine("[12] Proxy\n");
+                Console.WriteLine("Patrones de Comportamiento:");
+                Console.WriteLine("------------------------");
+                Console.WriteLine("[13] Chain of responsibility");
+                Console.WriteLine("[14] Command");
+                Console.WriteLine("[15] Interpreter");
                 Console.WriteLine("[16] Iterator");
                 Console.WriteLine("[17] Mediator");
+                Console.WriteLine("[18] Memento");
+                Console.WriteLine("[19] Observer");
+                Console.WriteLine("[20] State");
                 Console.WriteLine("[21] Strategy");
+                Console.WriteLine("[22] Template method");
+                Console.WriteLine("[23] Visitor");
+                Console.Write("Press '0' to exit\n");
 
                 opcion = Convert.ToInt32(Console.ReadLine());
 
@@ -55,6 +73,15 @@ namespace Design_patterns // Note: actual namespace depends on the project name.
                 {
                     case 0:
                         Console.WriteLine("Saliendo");
+                        break;
+                    case 1:
+
+                        new Client1().Main();
+
+                        break;
+                    case 2:
+
+                        new Client2().Main();
                         break;
 
                     case 3:

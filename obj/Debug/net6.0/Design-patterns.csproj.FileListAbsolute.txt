@@ -13,3 +13,5 @@ C:\Users\Gabriel\Documents\Design-patterns\obj\Debug\net6.0\Design-patterns.dll
 C:\Users\Gabriel\Documents\Design-patterns\obj\Debug\net6.0\ref\Design-patterns.dll
 C:\Users\Gabriel\Documents\Design-patterns\obj\Debug\net6.0\Design-patterns.pdb
 C:\Users\Gabriel\Documents\Design-patterns\obj\Debug\net6.0\Design-patterns.genruntimeconfig.cache
+C:\Users\Gabriel\Documents\Design-patterns\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\Gabriel\Documents\Design-patterns\obj\Debug\net6.0\Design-patterns.csproj.CopyComplete
