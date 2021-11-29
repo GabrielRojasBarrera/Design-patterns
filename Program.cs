@@ -213,6 +213,27 @@ namespace Design_patterns // Note: actual namespace depends on the project name.
                         client.ClientCode(proxy);
                         break;
 
+                    case 15:
+                        Console.WriteLine("Interpreter");
+                        string expresionEvaluar = "MCMXCIX";
+
+                        Contexto contexto = new Contexto(expresionEvaluar);
+
+                        List<Expresion> Arbol = new List<Expresion>();
+                        Arbol.Add(new ExpresionMiles());
+                        Arbol.Add(new ExpresionCientos());
+                        Arbol.Add(new ExpresionDecenas());
+                        Arbol.Add(new ExpresionUnidad());
+
+                        //Interpretamos siguiendo las reglas gramaticales que están en el árbol
+                        foreach (Expresion exp in Arbol)
+                        {
+                            exp.Interpretar(contexto);
+                        }
+
+                        Console.WriteLine("El número romano {0} es {1} en decimal", expresionEvaluar, contexto.Valor);
+                        break;
+
                     case 16:
                         Console.WriteLine("Iterator");
 
