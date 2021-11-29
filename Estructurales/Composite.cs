@@ -99,7 +99,7 @@ namespace Design_patterns.Estructurales
         }
     }
 
-    class Client
+    class Client3
     {
         // The client code works with all of the components via the base
         // interface.

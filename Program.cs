@@ -1,4 +1,6 @@
-﻿using Design_patterns.Creacionales;
+﻿using Design_patterns.Comportamiento;
+using Design_patterns.Creacionales;
+using Design_patterns.Estructurales;
 using RefactoringGuru.DesignPatterns.Flyweight.Conceptual;
 using RefactoringGuru.DesignPatterns.Iterator.Conceptual;
 using RefactoringGuru.DesignPatterns.Mediator.Conceptual;
@@ -126,6 +128,39 @@ namespace Design_patterns // Note: actual namespace depends on the project name.
                         builder.BuildPartC();
                         Console.Write(builder.GetProduct().ListParts());
                         break;
+                    case 6:
+                        Adaptee adaptee = new Adaptee();
+                        ITarget target = new Adapter(adaptee);
+
+                        Console.WriteLine("Adaptee interface is incompatible with the client.");
+                        Console.WriteLine("But with adapter client can call it's method.");
+
+                        Console.WriteLine(target.GetRequest());
+                        break;
+                    case 8:
+                        Client3 client3 = new Client3();
+
+                        // This way the client code can support the simple leaf
+                        // components...
+                        Leaf leaf = new Leaf();
+                        Console.WriteLine("Client: I get a simple component:");
+                        client3.ClientCode(leaf);
+
+                        // ...as well as the complex composites.
+                        Composite tree = new Composite();
+                        Composite branch1 = new Composite();
+                        branch1.Add(new Leaf());
+                        branch1.Add(new Leaf());
+                        Composite branch2 = new Composite();
+                        branch2.Add(new Leaf());
+                        tree.Add(branch1);
+                        tree.Add(branch2);
+                        Console.WriteLine("Client: Now I've got a composite tree:");
+                        client3.ClientCode(tree);
+
+                        Console.Write("Client: I don't need to check the components classes even when managing the tree:\n");
+                        client3.ClientCode2(tree, leaf);
+                        break;
 
                     case 11:
                         Console.WriteLine("Flyweight");
@@ -165,7 +200,7 @@ namespace Design_patterns // Note: actual namespace depends on the project name.
                     case 12:
                         Console.WriteLine("Proxy");
 
-                        Client client = new Client();
+                        RefactoringGuru.DesignPatterns.Proxy.Conceptual.Client client = new RefactoringGuru.DesignPatterns.Proxy.Conceptual.Client();
 
                         Console.WriteLine("Client: Executing the client code with a real subject:");
                         RealSubject realSubject = new RealSubject();
@@ -223,6 +258,13 @@ namespace Design_patterns // Note: actual namespace depends on the project name.
                         component2.DoD();
 
                         break;
+                    case 18:
+                        new Program5().Main();
+                        break;
+
+                    case 20:
+                        new Programa().Main();
+                        break;
 
                     case 21:
                         Console.WriteLine("Strategy");
@@ -230,7 +272,7 @@ namespace Design_patterns // Note: actual namespace depends on the project name.
                         // The client code picks a concrete strategy and passes it to the
                         // context. The client should be aware of the differences between
                         // strategies in order to make the right choice.
-                        var context = new Context();
+                        var context = new RefactoringGuru.DesignPatterns.Strategy.Conceptual.Context();
 
                         Console.WriteLine("Client: Strategy is set to normal sorting.");
                         context.SetStrategy(new ConcreteStrategyA());
@@ -243,6 +285,13 @@ namespace Design_patterns // Note: actual namespace depends on the project name.
                         context.DoSomeBusinessLogic();
                         
                         break;
+                    case 22:
+                        new Program2().Main();
+                        break;
+                    case 23:
+                        new Program4().Main();
+                        break;
+
 
                     default:
                         Console.WriteLine("Opción inválida");

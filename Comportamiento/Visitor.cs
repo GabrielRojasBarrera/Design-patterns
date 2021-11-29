@@ -94,7 +94,7 @@ namespace Design_patterns.Comportamiento
         }
     }
 
-    public class Cliente
+    public class Client4
     {
         // The client code can run visitor operations over any set of elements
         // without figuring out their concrete classes. The accept operation
@@ -108,25 +108,25 @@ namespace Design_patterns.Comportamiento
         }
     }
 
-    //class Program
-    //{
-    //    static void Main(string[] args)
-    //    {
-    //        List<IComponent> components = new List<IComponent>
-    //        {
-    //            new ConcreteComponentA(),
-    //            new ConcreteComponentB()
-    //        };
+    public class Program4
+    {
+        public void Main()
+        {
+            List<IComponent> components = new List<IComponent>
+            {
+                new ConcreteComponentA(),
+                new ConcreteComponentB()
+            };
 
-    //        Console.WriteLine("The client code works with all visitors via the base Visitor interface:");
-    //        var visitor1 = new ConcreteVisitor1();
-    //        Client.ClientCode(components, visitor1);
+            Console.WriteLine("The client code works with all visitors via the base Visitor interface:");
+            var visitor1 = new ConcreteVisitor1();
+            Client4.ClientCode(components, visitor1);
 
-    //        Console.WriteLine();
+            Console.WriteLine();
 
-    //        Console.WriteLine("It allows the same client code to work with different types of visitors:");
-    //        var visitor2 = new ConcreteVisitor2();
-    //        Client.ClientCode(components, visitor2);
-    //    }
-    //}
+            Console.WriteLine("It allows the same client code to work with different types of visitors:");
+            var visitor2 = new ConcreteVisitor2();
+            Client4.ClientCode(components, visitor2);
+        }
+    }
 }

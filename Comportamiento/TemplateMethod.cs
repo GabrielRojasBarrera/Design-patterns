@@ -106,18 +106,18 @@ namespace Design_patterns.Comportamiento
         }
     }
 
-    //class Program
-    //{
-    //    static void Main(string[] args)
-    //    {
-    //        Console.WriteLine("Same client code can work with different subclasses:");
+    public class Program2
+    {
+        public  void Main()
+        {
+            Console.WriteLine("Same client code can work with different subclasses:");
 
-    //        Client.ClientCode(new ConcreteClass1());
+            Client.ClientCode(new ConcreteClass1());
 
-    //        Console.Write("\n");
+            Console.Write("\n");
 
-    //        Console.WriteLine("Same client code can work with different subclasses:");
-    //        Client.ClientCode(new ConcreteClass2());
-    //    }
-    //}
+            Console.WriteLine("Same client code can work with different subclasses:");
+            Client.ClientCode(new ConcreteClass2());
+        }
+    }
 }
