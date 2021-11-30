@@ -48,19 +48,26 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Gabriel\\.nuget\\packages\\": {}
+    "C:\\Users\\Javier Hernández\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Gabriel\\Documents\\Design-patterns\\Design-patterns.csproj",
+      "projectUniqueName": "C:\\Users\\Javier Hernández\\Documents\\Universidad\\7° Cuatrimestre\\Arquitecturas de Software\\Parcial 3\\Design-patterns\\Design-patterns.csproj",
       "projectName": "Design-patterns",
-      "projectPath": "C:\\Users\\Gabriel\\Documents\\Design-patterns\\Design-patterns.csproj",
-      "packagesPath": "C:\\Users\\Gabriel\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Gabriel\\Documents\\Design-patterns\\obj\\",
+      "projectPath": "C:\\Users\\Javier Hernández\\Documents\\Universidad\\7° Cuatrimestre\\Arquitecturas de Software\\Parcial 3\\Design-patterns\\Design-patterns.csproj",
+      "packagesPath": "C:\\Users\\Javier Hernández\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Javier Hernández\\Documents\\Universidad\\7° Cuatrimestre\\Arquitecturas de Software\\Parcial 3\\Design-patterns\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Gabriel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Javier Hernández\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

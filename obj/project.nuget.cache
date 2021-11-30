@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "QNOxPLkNOYmvtMrHd3NaAS92jFGRjp21uM/mcRqXHutHfiHZbwLTe9X3/t3M5AwvFpeNfhxN4yTjmrxhcoPhgA==",
+  "dgSpecHash": "f4tuOe4hzLSh2B/S4HTEjDVc/p9bwz3fJkXHM0AJbCgICujXFcsgeuP0jnBy565TMgulrjHlg0kiIr9w7JAXKg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Gabriel\\Documents\\Design-patterns\\Design-patterns.csproj",
+  "projectFilePath": "C:\\Users\\Javier Hernández\\Documents\\Universidad\\7° Cuatrimestre\\Arquitecturas de Software\\Parcial 3\\Design-patterns\\Design-patterns.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Gabriel\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+    "C:\\Users\\Javier Hernández\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
   ],
   "logs": []
 }

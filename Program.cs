@@ -36,12 +36,13 @@ namespace Design_patterns // Note: actual namespace depends on the project name.
             do
             {
                 Console.Clear();
-                Console.WriteLine("Seleccione el patrón que desea ejecutar:\r\n");
+                Console.WriteLine("Seleccione el patrón que desea ejecutar:\r\n");         
                 Console.WriteLine("Patrones de Creación:");
                 Console.WriteLine("------------------------");
                 Console.WriteLine("[1] Abstract factory");
                 Console.WriteLine("[2] Factory method");
                 Console.WriteLine("[3] Singleton");
+                Console.WriteLine("[4] Prototype");
                 Console.WriteLine("[5] Builder\n");
                 Console.WriteLine("Patrones de Estructura:");
                 Console.WriteLine("------------------------");
@@ -76,20 +77,22 @@ namespace Design_patterns // Note: actual namespace depends on the project name.
                     case 0:
                         Console.WriteLine("Saliendo");
                         break;
-                    case 1:
 
+                    //PATRONES CREACIONALES
+                    case 1:
+                        Console.WriteLine("ABSTRACT FACTORY");
                         new Client1().Main();
 
                         break;
                     case 2:
-
+                        Console.WriteLine("FACTORY METHOD");
                         new Client2().Main();
                         break;
 
                     case 3:
                         // The client code.
 
-                        Console.WriteLine("Singleton");
+                        Console.WriteLine("SINGLETON");
                         Singleton s1 = Singleton.GetInstance();
                         Singleton s2 = Singleton.GetInstance();
 
@@ -103,8 +106,14 @@ namespace Design_patterns // Note: actual namespace depends on the project name.
                         }
                         break;
 
+                    case 4:
+                        Console.WriteLine("PROTOTYPE");
+                        var prototype = new Prototype();
+                        prototype.Main();
+                        break;
+
                     case 5:
-                        Console.WriteLine("Builder");
+                        Console.WriteLine("BUILDER");
 
                         // The client code creates a builder object, passes it to the
                         // director and then initiates the construction process. The end
@@ -128,7 +137,10 @@ namespace Design_patterns // Note: actual namespace depends on the project name.
                         builder.BuildPartC();
                         Console.Write(builder.GetProduct().ListParts());
                         break;
+
+                    //PATRONES ESTRUCTURALES
                     case 6:
+                        Console.WriteLine("ADAPTER");
                         Adaptee adaptee = new Adaptee();
                         ITarget target = new Adapter(adaptee);
 
@@ -137,7 +149,15 @@ namespace Design_patterns // Note: actual namespace depends on the project name.
 
                         Console.WriteLine(target.GetRequest());
                         break;
+
+                    case 7:
+                        Console.WriteLine("BRIDGE");
+                        Bridge bridge = new Bridge();
+                        bridge.Main();
+                        break;
+
                     case 8:
+                        Console.WriteLine("COMPOSITE");
                         Client3 client3 = new Client3();
 
                         // This way the client code can support the simple leaf
@@ -162,8 +182,20 @@ namespace Design_patterns // Note: actual namespace depends on the project name.
                         client3.ClientCode2(tree, leaf);
                         break;
 
+                    case 9:
+                        Console.WriteLine("DECORATOR");
+                        Decorator decorator = new Decorator();
+                        decorator.Main();
+                        break;
+
+                    case 10:
+                        Console.WriteLine("FACADE");
+                        Facade facade = new Facade();
+                        facade.Main();
+                        break;
+
                     case 11:
-                        Console.WriteLine("Flyweight");
+                        Console.WriteLine("FLYWEIGHT");
                         // The client code usually creates a bunch of pre-populated
                         // flyweights in the initialization stage of the application.
                         var factory = new FlyweightFactory(
@@ -198,7 +230,7 @@ namespace Design_patterns // Note: actual namespace depends on the project name.
                         break;
 
                     case 12:
-                        Console.WriteLine("Proxy");
+                        Console.WriteLine("PROXY");
 
                         RefactoringGuru.DesignPatterns.Proxy.Conceptual.Client client = new RefactoringGuru.DesignPatterns.Proxy.Conceptual.Client();
 
@@ -213,8 +245,20 @@ namespace Design_patterns // Note: actual namespace depends on the project name.
                         client.ClientCode(proxy);
                         break;
 
+                    case 13:
+                        Console.WriteLine("CHAIN OF RESPONSIBILITY");
+                        ChainOfResponsibility chainOfResponsibility = new ChainOfResponsibility();
+                        chainOfResponsibility.Main();
+                        break;
+
+                    case 14:
+                        Console.WriteLine("COMMAND");
+                        Command command = new Command();
+                        command.Main();
+                        break;
+
                     case 15:
-                        Console.WriteLine("Interpreter");
+                        Console.WriteLine("INTERPRETER");
                         string expresionEvaluar = "MCMXCIX";
 
                         Contexto contexto = new Contexto(expresionEvaluar);
@@ -235,7 +279,7 @@ namespace Design_patterns // Note: actual namespace depends on the project name.
                         break;
 
                     case 16:
-                        Console.WriteLine("Iterator");
+                        Console.WriteLine("ITERATOR");
 
                         // The client code may or may not know about the Concrete Iterator
                         // or Collection classes, depending on the level of indirection you
@@ -264,7 +308,7 @@ namespace Design_patterns // Note: actual namespace depends on the project name.
                         break;
 
                     case 17:
-                        Console.WriteLine("Mediator");
+                        Console.WriteLine("MEDIATOR");
                         // The client code.
                         Component1 component1 = new Component1();
                         Component2 component2 = new Component2();
@@ -280,15 +324,23 @@ namespace Design_patterns // Note: actual namespace depends on the project name.
 
                         break;
                     case 18:
+                        Console.WriteLine("MEMENTO");
                         new Program5().Main();
                         break;
 
+                    case 19:
+                        Console.WriteLine("OBSERVER");
+                        Observer observer = new Observer();
+                        observer.Main();
+                        break;
+
                     case 20:
+                        Console.WriteLine("STATE");
                         new Programa().Main();
                         break;
 
                     case 21:
-                        Console.WriteLine("Strategy");
+                        Console.WriteLine("STRATEGY");
                         
                         // The client code picks a concrete strategy and passes it to the
                         // context. The client should be aware of the differences between
@@ -307,9 +359,11 @@ namespace Design_patterns // Note: actual namespace depends on the project name.
                         
                         break;
                     case 22:
+                        Console.WriteLine("TEMPLATE METHOD");
                         new Program2().Main();
                         break;
                     case 23:
+                        Console.WriteLine("VISITOR");
                         new Program4().Main();
                         break;
 

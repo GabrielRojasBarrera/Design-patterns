@@ -15,3 +15,20 @@ C:\Users\Gabriel\Documents\Design-patterns\obj\Debug\net6.0\Design-patterns.pdb
 C:\Users\Gabriel\Documents\Design-patterns\obj\Debug\net6.0\Design-patterns.genruntimeconfig.cache
 C:\Users\Gabriel\Documents\Design-patterns\bin\Debug\net6.0\Newtonsoft.Json.dll
 C:\Users\Gabriel\Documents\Design-patterns\obj\Debug\net6.0\Design-patterns.csproj.CopyComplete
+C:\Users\Javier Hernández\Documents\Universidad\7° Cuatrimestre\Arquitecturas de Software\Parcial 3\Design-patterns\bin\Debug\net6.0\Design-patterns.exe
+C:\Users\Javier Hernández\Documents\Universidad\7° Cuatrimestre\Arquitecturas de Software\Parcial 3\Design-patterns\bin\Debug\net6.0\Design-patterns.deps.json
+C:\Users\Javier Hernández\Documents\Universidad\7° Cuatrimestre\Arquitecturas de Software\Parcial 3\Design-patterns\bin\Debug\net6.0\Design-patterns.runtimeconfig.json
+C:\Users\Javier Hernández\Documents\Universidad\7° Cuatrimestre\Arquitecturas de Software\Parcial 3\Design-patterns\bin\Debug\net6.0\Design-patterns.dll
+C:\Users\Javier Hernández\Documents\Universidad\7° Cuatrimestre\Arquitecturas de Software\Parcial 3\Design-patterns\bin\Debug\net6.0\ref\Design-patterns.dll
+C:\Users\Javier Hernández\Documents\Universidad\7° Cuatrimestre\Arquitecturas de Software\Parcial 3\Design-patterns\bin\Debug\net6.0\Design-patterns.pdb
+C:\Users\Javier Hernández\Documents\Universidad\7° Cuatrimestre\Arquitecturas de Software\Parcial 3\Design-patterns\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\Javier Hernández\Documents\Universidad\7° Cuatrimestre\Arquitecturas de Software\Parcial 3\Design-patterns\obj\Debug\net6.0\Design-patterns.csproj.AssemblyReference.cache
+C:\Users\Javier Hernández\Documents\Universidad\7° Cuatrimestre\Arquitecturas de Software\Parcial 3\Design-patterns\obj\Debug\net6.0\Design-patterns.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Javier Hernández\Documents\Universidad\7° Cuatrimestre\Arquitecturas de Software\Parcial 3\Design-patterns\obj\Debug\net6.0\Design-patterns.AssemblyInfoInputs.cache
+C:\Users\Javier Hernández\Documents\Universidad\7° Cuatrimestre\Arquitecturas de Software\Parcial 3\Design-patterns\obj\Debug\net6.0\Design-patterns.AssemblyInfo.cs
+C:\Users\Javier Hernández\Documents\Universidad\7° Cuatrimestre\Arquitecturas de Software\Parcial 3\Design-patterns\obj\Debug\net6.0\Design-patterns.csproj.CoreCompileInputs.cache
+C:\Users\Javier Hernández\Documents\Universidad\7° Cuatrimestre\Arquitecturas de Software\Parcial 3\Design-patterns\obj\Debug\net6.0\Design-patterns.csproj.CopyComplete
+C:\Users\Javier Hernández\Documents\Universidad\7° Cuatrimestre\Arquitecturas de Software\Parcial 3\Design-patterns\obj\Debug\net6.0\Design-patterns.dll
+C:\Users\Javier Hernández\Documents\Universidad\7° Cuatrimestre\Arquitecturas de Software\Parcial 3\Design-patterns\obj\Debug\net6.0\ref\Design-patterns.dll
+C:\Users\Javier Hernández\Documents\Universidad\7° Cuatrimestre\Arquitecturas de Software\Parcial 3\Design-patterns\obj\Debug\net6.0\Design-patterns.pdb
+C:\Users\Javier Hernández\Documents\Universidad\7° Cuatrimestre\Arquitecturas de Software\Parcial 3\Design-patterns\obj\Debug\net6.0\Design-patterns.genruntimeconfig.cache
